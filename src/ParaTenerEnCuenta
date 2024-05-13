@@ -1,0 +1,18 @@
+Para tener en cuenta:
+- El mapa apenas se renderiza, obtiene los datos de la fecha 2023-01-01, en la hora 00.
+- La escala de colores se estructura de la siguiente manera (segun confiabilidad): 
+     de 0 a 33 -> amarillo
+     de 34 a 66 -> naranja
+     de 67 a 100 -> rojo
+- Los filtros funcionan dinamicamente, es decir, el de satelite (funciona sin redux) y 
+     los de date & time (funcionan con redux), se pueden modificar y el mapa ira cambiando a 
+     medida que los valores de los mismos se modifiquen. El filtro de time permite seleccionar los
+     minutos, aunque para obtener la informacion solo utiliza la hora.
+- El boton de "Cargar informacion de puntos visible" hace que en el boton de su lado se llene con 
+     la informacion de aquellos puntos que se esten visualizando dentro de los bordes del mapa en
+     el momento de hacerle click.
+- El boton con el simbolo de Info muestra a su lado entre parentesis la cantidad de puntos que se mostraran
+     en la tabla que se abre al hacer click. Alli se puede visualizar todos los puntos con informacion. 
+     Una vez que se abra la tabla, tiene la opcion de cerrarla, con el boton que se encuentra debajo
+     de la misma.
+- Al clickear cualquier punto, se desplegara un Popup con informacion detallada a cerca del punto.
